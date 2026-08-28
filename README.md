@@ -1,2 +1,2 @@
 # Django-Docker
-A Django Invoice &amp; Payment Management CRUD API packaged in Docker.
+A Django REST API providing CRUD operations for Invoice &amp; Payment Management, containerized in Docker.
