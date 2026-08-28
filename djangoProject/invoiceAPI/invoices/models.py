@@ -31,3 +31,12 @@ class InvoiceItem(models.Model):
     invoice = models.ForeignKey(Invoice, on_delete=models.CASCADE, related_name="items")
     def __str__(self):
         return self.description
+
+class Payment(models.Model):
+    payment_date = models.DateField()
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    #When invoice is deleted, delete all invoice payments:
+    invoice = models.ForeignKey(Invoice, on_delete=models.CASCADE, related_name="payments")
+
+    def __str__(self):
+        return f"Payment #{self.id}"
