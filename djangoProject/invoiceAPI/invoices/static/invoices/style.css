@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px, 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin: 10px;
+}
+footer{
+    margin-top: 60px;
+    font-size: 14px;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice & Payment Management API</title>
+    <link rel="stylesheet" href="{% static 'invoices/style.css' %}"
+
+</head>
+<body>
+    <h1>Invoice & Payment Management API</h1>
+
+        <p>
+            A Django REST API for managing customers, invoices, invoice items, and payments.<br>
+            This project provides CRUD functionality for creating, viewing, updating, and deleting customer invoice and payment data.
+        </p>
+
+        <h2>API Endpoints</h2>
+        <ul>
+            <li><a href = "/api/customers/">Customers</a></li>
+            <li><a href = "/api/invoices/">Invoices</a></li>
+            <li><a href = "/api/invoice-items/">Invoice Items</a></li>
+            <li><a href = "/api/payments/">Payments</a></li>
+
+        </ul>
+
+        <footer>
+        This Django site was developed by Andrew Koch.<br>
+        All code along with a Docker containerization can be found at <a href="https://github.com/Andrew-Koch/Django-Docker">my github</a>
+        </footer>
+
+</body>
+
+</html>
